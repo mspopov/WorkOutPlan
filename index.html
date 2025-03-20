@@ -15,6 +15,7 @@
         h1 {
             font-size: 72px;
             color: #051e40;
+            margin: 0;
         }
         h2 {
             font-size: 36px;
@@ -28,11 +29,18 @@
             font-size: 24px;
             color: #888888
         }
+        .container_main {
+            width: 90%;
+            max-width: 750px;
+            margin: auto;
+            padding: 20px 0;
+        }
         .container {
             width: 90%;
             max-width: 1100px;
             margin: auto;
             padding: 20px 0;
+            background-color: #f4f4f4;
         }
         .section {
             padding: 40px 0;
@@ -40,10 +48,10 @@
         }
         .section img {
             width: 100%;
-            max-width: 475px;
+            max-width: 450px;
             border-radius: 15px;
         }
-        .logo {
+        .section .logo img {
             max-width: 750px;
             border-radius: 0px;
         }
@@ -67,7 +75,6 @@
             gap: 20px;
             flex-wrap: wrap;
             text-align: left;
-            background-color: #f4f4f4;
         }
         .content-grid .content, .content-grid .image {
             flex: 1;
@@ -87,7 +94,7 @@
     </style>
 </head>
 <body>
-    <div class="container section">
+    <div class="container_main section">
         <h1>Your own workout plan</h1>
         <img class="logo" src="workoutplan_1_top.jpg" alt="Workout">
         <p class="secondary_text">Get a fully personalized workout plan tailored to your lifestyle, body, and health from a certified fitness trainer.</p>
