@@ -72,8 +72,8 @@
     }
 
     .plan button {
-      background: black;
-      color: white;
+      background: #f2f2f2;
+      color: black;
       border: none;
       padding: 12px 20px;
       border-radius: 8px;
@@ -82,8 +82,9 @@
       width: 100%;
     }
 
-    .plan button:hover {
-      background: #333;
+    .active {
+      background: #05f;
+      color: white;
     }
 
     /* --- Adaptive styles --- */
@@ -139,14 +140,15 @@
     <div class="plan">
       <h2>One-time preparation</h2>
       <div class="price">$39</div>
+      <br>
       <ul>
         <li>&#x2705; One professional workout plan</li>
         <li>&#x2705; One plan amendment</li>
         <li>&#x2705; Weekly calendar overview</li>
         <li>&#x2705; Daily step-by-step plan</li>
         <li style="text-decoration: line-through;">&#x1F6AB; Online trainer support</li>
-        <li> </li>
       </ul>
+      <br>
       <a href="https://buy.stripe.com/test_4gw9DhcTr4eG9sI288" target="_blank">
         <button>Buy now</button>
       </a>
@@ -165,7 +167,7 @@
         <li>&#x2705; Online trainer support</li>
       </ul>
       <a href="https://buy.stripe.com/test_7sI8y58rfaeG6gMdQR" target="_blank">
-        <button>Subscribe</button>
+        <button class="active">Subscribe</button>
       </a>
     </div>
   </section>
