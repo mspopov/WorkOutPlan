@@ -17,17 +17,16 @@
             color: #051e40;
             margin: 0;
             line-height: 1;
-            padding: 10;
+            padding: 10px;
         }
         h2 {
             font-size: 36px;
             color: #001122;
-            line-height: 1.2;
+            line-height: 1;
         }
         .footer h2 {
             font-size: 50px;            
         }
-
         .secondary_text {
             font-size: 24px;
             color: #888888
@@ -40,9 +39,10 @@
             padding: 20px 0;
         }
         .container_main img {
-            max-width: 650px;
+            max-width: 100%;
+            max-height: 400px;
             border-radius: 0px;
-            padding: 20px 0;
+            padding-top: 10px;
         }
         .container {
             width: 90%;
@@ -67,7 +67,6 @@
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            margin-top: 10px;
             transition: background 0.3s;
         }
         .button:hover {
@@ -85,16 +84,43 @@
             flex: 1;
             min-width: 280px;
         }
-        @media (max-width: 768px) {
-            .content-grid {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
         .footer {
             padding: 40px 0;
             background-color: #f4f4f4;
             text-align: center;
+        }
+        .footer-btn {
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+        h1 {
+            font-size: 36px;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .footer h2 {
+            font-size: 28px;
+        }
+        .secondary_text {
+            font-size: 18px;
+        }
+        .section {
+            padding: 20px 10px;
+        }
+        .container_main,
+        .container {
+            width: 95%;
+            padding: 10px 0;
+        }
+        .content-grid {
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+        }
         }
     </style>
 </head>
